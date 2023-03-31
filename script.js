@@ -178,6 +178,7 @@ btnNext.addEventListener('click', e => {
 
     if (+nextSection === 5) {
       btnNext.style.display = 'none';
+      btnBack.style.display = 'none';
     }
 
     document

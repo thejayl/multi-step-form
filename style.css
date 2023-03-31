@@ -90,7 +90,7 @@ body {
   font-family: 'Ubuntu', sans-serif;
   line-height: 1;
 
-  background-color: hsl(231, 100%, 99%);
+  background-color: hsl(217, 100%, 97%);
 }
 
 .wrap {
@@ -159,6 +159,7 @@ body {
 
 .step--active .step-num {
   color: hsl(213, 96%, 18%);
+  border-color: hsl(206, 94%, 87%);
   background-color: hsl(206, 94%, 87%);
 }
 
@@ -275,6 +276,10 @@ body {
 }
 
 .required input {
+  border-color: hsl(354, 84%, 57%);
+}
+
+.section-1--form__item input:required:invalid {
   border-color: hsl(354, 84%, 57%);
 }
 /* ******************* */
@@ -555,6 +560,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 36px;
 }
 
 .section-5--img {
@@ -630,13 +636,13 @@ body {
 /* **************** */
 /* **** Footer **** */
 /* **************** */
-footer {
-  display: none;
-}
-
 .attribution {
+  position: fixed;
+  bottom: 12px;
+  left: 50%;
   font-size: 11px;
   text-align: center;
+  transform: translateX(-50%);
 }
 
 .attribution a {
